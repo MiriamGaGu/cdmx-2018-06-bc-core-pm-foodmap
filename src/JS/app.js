@@ -17,7 +17,7 @@ let map;
           zoom: 8
         });
       }
-      infoWindow = new google.maps.InfoWindow; 
+      
 
 
 //Timer for splash
