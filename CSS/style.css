@@ -1,7 +1,11 @@
 body {
-    background-color: black;
+    background-color:#000000;
 }
 
+img{
+    margin-top: 80px;
+    size: 70%;
+}
 #loader {
     object-position: center;
 }
@@ -90,6 +94,7 @@ body {
 
 .lds-flickr div {
     position: absolute;
+    orientation: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -131,4 +136,12 @@ body {
     height: 200px !important;
     -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
     transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+#map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0; 
 }
