@@ -18,19 +18,19 @@ addMarker({
     content: '<p>Mural cafè Olè</p>'
 });
 addMarker({
-    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    coordenadas: { lat: 19.4045352, lng: -99.1662225 },
     content: '<p>Bar cafè Colòn</p>'
 });
 addMarker({
-    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    coordenadas: { lat: 19.4045352, lng: -99.1662225},
     content: '<p>La Pizzeria Argentina</p>'
 });
 addMarker({
-    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    coordenadas: { lat: 19.4045352, lng: -99.1662225},
     content: '<p>Panaderia Artesanal</p>'
 });
 addMarker({
-    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 }
+    coordenadas: { lat: 19.4045352, lng: -99.1662225}
     content: '<p>Cafè AMAKAFE</p>'
 });
 
