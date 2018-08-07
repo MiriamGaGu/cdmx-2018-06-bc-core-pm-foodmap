@@ -21,10 +21,11 @@ addMarker({
 });
 
 const initMap = () => {
-        let options = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -19 25 42, lng: 99 07 39 },
-            zoom: 8
-        });
+  let location = {lat: 19.432608, lng:-99.133208};
+  let options = new google.maps.Map(document.getElementById('map'), {
+    center: location, 
+    zoom: 8
+  });
 
 const addMarker = (props) => {
   let marker = new google.map.Marker({
