@@ -13,11 +13,26 @@ function showPage() {
 //confi del mapa, opciones de mapa
 // let map;
 
-addMarker({ coordenadas: { lat: 19.4045352, lng: -99.164021 } });
-addMarker({ coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 } });
-addMarker({ coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 } });
-addMarker({ coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 } });
-addMarker({ coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 } });
+addMarker({
+    coordenadas: { lat: 19.4045352, lng: -99.164021 },
+    content: '<p>Mural cafè Olè</p>'
+});
+addMarker({
+    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    content: '<p>Bar cafè Colòn</p>'
+});
+addMarker({
+    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    content: '<p>La Pizzeria Argentina</p>'
+});
+addMarker({
+    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 },
+    content: '<p>Panaderia Artesanal</p>'
+});
+addMarker({
+    coordenadas: { lat: 19.4045352, lng: -99.1662225, 17 }
+    content: '<p>Cafè AMAKAFE</p>'
+});
 
 const initMap = () => {
         let options = new google.maps.Map(document.getElementById('map'), {
@@ -31,6 +46,16 @@ const initMap = () => {
                     map: map
 
                 }
+            }
+
+            if (props.content) {
+                let infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                })
+                marker.addListener('click', function() {
+                    infoWindow.open(map, marker);
+                });
+
             }
         }
 
